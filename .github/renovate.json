@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>oravops/oravops-internal-renovate-config#0.1.0"
+    "github>oravops/oravops-internal-renovate-config#0.1.1"
   ],
   "renovate-config-presets": {
     "managerFilePatterns": "/\\.json5?$/"
