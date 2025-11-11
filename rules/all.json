@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Extend all rules presets.",
   "extends": [
-    "github>oravops/oravops-renovate-config//rules/kubernetes#main",
-    "github>oravops/oravops-renovate-config//rules/talos#main"
+    "github>oravops/oravops-renovate-config//rules/kubernetes#2.1.1",
+    "github>oravops/oravops-renovate-config//rules/talos#2.1.1"
   ]
 }

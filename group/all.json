@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Extend all group presets.",
   "extends": [
-    "github>oravops/oravops-renovate-config//group/kubernetes#main",
-    "github>oravops/oravops-renovate-config//group/talos#main"
+    "github>oravops/oravops-renovate-config//group/kubernetes#2.1.1",
+    "github>oravops/oravops-renovate-config//group/talos#2.1.1"
   ]
 }
