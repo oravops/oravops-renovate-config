@@ -2,17 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "customManagers": [
     {
-      "description": "Manage *_VERSION keys in YAML files.",
+      "description": "Manage *_VERSION and version keys in YAML files.",
       "customType": "regex",
       "fileMatch": "{{arg0}}",
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
         "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
-        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[A-Z_]+_VERSION: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\"",
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+version: *v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)",
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+version: *'v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)'",
+        "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+version: *\"v?(?<currentValue>\\d+(?:\\.\\d+)*(?:-\\w+)?)\""
       ]
     },
     {
-      "description": "Manage KUBERNETES_VERSION keys in YAML files.",
+      "description": "Manage KUBERNETES_VERSION and kubernetesVersion keys in YAML files.",
       "customType": "regex",
       "fileMatch": "{{arg0}}",
       "matchStrings": [
@@ -27,7 +30,7 @@
       "depNameTemplate": "kubernetes/kubernetes"
     },
     {
-      "description": "Manage TALOS_VERSION keys in YAML files.",
+      "description": "Manage TALOS_VERSION and talosVersion keys in YAML files.",
       "customType": "regex",
       "fileMatch": "{{arg0}}",
       "matchStrings": [
