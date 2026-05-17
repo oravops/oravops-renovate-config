@@ -1,12 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>oravops/oravops-renovate-config//group/all#main",
-    "github>oravops/oravops-renovate-config//rules/all#main",
-    "github>oravops/oravops-renovate-config//customManagers/customImages#main(.ya?ml)",
-    "github>oravops/oravops-renovate-config//customManagers/customVersions#main(.ya?ml)",
-    "github>oravops/oravops-renovate-config//customManagers/fluxSusbstitutions.json#main(.ya?ml)",
-    "github>oravops/oravops-renovate-config//customManagers/githubRawLinks#main(.ya?ml)",
-    "github>oravops/oravops-renovate-config//customManagers/githubRelease#main(.ya?ml)"
+    "github>oravops/oravops-renovate-config//group/all#3.1.0",
+    "github>oravops/oravops-renovate-config//rules/all#3.1.0",
+    "github>oravops/oravops-renovate-config//customManagers/customImages#3.1.0(.ya?ml)",
+    "github>oravops/oravops-renovate-config//customManagers/customVersions#3.1.0(.ya?ml)",
+    "github>oravops/oravops-renovate-config//customManagers/fluxSusbstitutions.json#3.1.0(.ya?ml)",
+    "github>oravops/oravops-renovate-config//customManagers/githubRawLinks#3.1.0(.ya?ml)",
+    "github>oravops/oravops-renovate-config//customManagers/githubRelease#3.1.0(.ya?ml)"
   ]
 }
