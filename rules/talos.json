@@ -4,7 +4,9 @@
   "packageRules": [
     {
       "extends": ["github>oravops/oravops-renovate-config//packages/talos#main"],
-      "allowedVersions": "!/^\\d+\\.\\d+\\.0$/"
+      "allowedVersions": "!/^\\d+\\.\\d+\\.0$/",
+      "separateMultipleMinor": true,
+      "separateMinorPatch": true
     }
   ]
 }
