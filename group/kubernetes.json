@@ -3,7 +3,7 @@
   "description": "Group all Kubernetes-related dependencies together.",
   "packageRules": [
     {
-      "extends": ["github>oravops/oravops-renovate-config//packages/kubernetes#main"],
+      "extends": ["github>oravops/oravops-renovate-config//packages/kubernetes#3.0.0"],
       "branchTopic": "kubernetes-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
       "commitMessageTopic": "Kubernetes"
     }

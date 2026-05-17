@@ -3,7 +3,7 @@
   "description": "Restrict Kubernetes versions.",
   "packageRules": [
     {
-      "extends": ["github>oravops/oravops-renovate-config//packages/kubernetes#main"],
+      "extends": ["github>oravops/oravops-renovate-config//packages/kubernetes#3.0.0"],
       "allowedVersions": "!/^\\d+\\.\\d+\\.0$/"
     }
   ]

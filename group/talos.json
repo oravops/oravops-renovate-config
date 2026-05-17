@@ -3,7 +3,7 @@
   "description": "Group all Talos-related dependencies together.",
   "packageRules": [
     {
-      "extends": ["github>oravops/oravops-renovate-config//packages/talos#main"],
+      "extends": ["github>oravops/oravops-renovate-config//packages/talos#3.0.0"],
       "branchTopic": "talos-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
       "commitMessageTopic": "Talos"
     },
