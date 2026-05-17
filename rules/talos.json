@@ -3,7 +3,7 @@
   "description": "Limit Talos versions to avoid breaking changes",
   "packageRules": [
     {
-      "extends": ["github>oravops/oravops-renovate-config//packages/talos#main"],
+      "extends": ["github>oravops/oravops-renovate-config//packages/talos#2.1.2"],
       "allowedVersions": "< 1.11.0"
     }
   ]
